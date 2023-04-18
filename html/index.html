@@ -5,38 +5,47 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="../css/style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/82619a4bd3.js" crossorigin="anonymous"></script>
 
-      <title>Nifemi</title>
+      <title>nifemi</title>
 </head>
 <body>
       <nav>
-            <img src="../img/logo.png" alt="logo">
+            <img class="logo
+            " src="../img/logo.png" alt="logo">
       </nav>
       
       <div id="hero">
-            Hello, I am
-            <h2>Oluwanifemi</h2>
+            <div id="hero-left">
+                  <h2>Hello, I am</h2>
+                  <p id="my_name">Oluwanifemi</p>
 
-            <div>
-                  <p>I am a software developer and product manager who loves to work with design. I have a keen eye for the user experience, and it's my goal to make sure that products are as thoughtful and beautiful as they can be.</p>
+                  <div id="hero-text">
+                        <p>I am a software developer and product manager who loves to work with design. I have a keen eye for the user experience, and it's my goal to make sure that products are as thoughtful and beautiful as they can be.</p>
+                  </div>
             </div>
 
-            <div>
-                  <img src="../img/photo.png" alt="photo">
-            </div>
-
-            <div>
-                  Scroll for more
+            <div id="hero-right">
+                  <img class="photo" src="../img/photo.png" alt="photo">
             </div>
       </div>
 
+      <div class="scroll">
+            <a id="scroll" href="#skillset">
+                  <i class="far fa-arrow-alt-circle-down fa-3x"></i>
+            </a>
+      </div>
+
       <div id="skillset">
-            <div>
+            <div id="skill-left">
                   <h3>My Skillset</h3>
-                  <p>Software Development, Interface Design, & Product Management</p>
+                  <p id="skills">Software Development, Interface Design, & Product Management</p>
             </div>
 
-            <div>
+            <div id="skill-right">
                   <p>
                         As someone with a strong interest in product management, I have been actively learning about the field through personal research and self-directed study. I enjoy exploring different aspects of the product development process, from idea conception to materialization.
 
@@ -46,28 +55,35 @@
       </div>
 
       <div id="projects">
-            <h2>Recent Projects</h2>
-            Projects
+            <h3>Recent Projects</h3>
+            projects will come here
       </div>
 
 
       <div id="rationale">
-            <h2>Rationale</h2>
-            In today's fast-paced world, the intersection of technology, business, and human needs has become increasingly important. As a computer science undergraduate with a growing interest in product management, I have come to realize that the most successful products are those that prioritize the needs and desires of users while utilizing technology in innovative ways.
+            <h3>Rationale</h3>
 
-            By combining my knowledge of computer science and software development with my interest in product management, I am able to approach product design and development with a unique perspective. I believe that technology should be used to make people's lives easier and more enjoyable, and that effective product management can help bridge the gap between technology and human needs.
+            <div id="rat-text">
+                  <p>In today's fast-paced world, the intersection of technology, business, and human needs has become increasingly important. As a computer science undergraduate with a growing interest in product management, I have come to realize that the most successful products are those that prioritize the needs and desires of users while utilizing technology in innovative ways.
+
+                  By combining my knowledge of computer science and software development with my interest in product management, I am able to approach product design and development with a unique perspective. I believe that technology should be used to make people's lives easier and more enjoyable, and that effective product management can help bridge the gap between technology and human needs.</p>
+            </div>
+
+            
       </div>
 
 
       <div id="contact">
-            Get in touch
+            <a id="link" href="mailto:nifoyewole@gmail.com"><h3>Get in touch</h3>
+                  <p><i class="far fa-envelope fa-2x"></i></p>
+            </a>
       </div>
 
       <footer>
-            <div>Built entirely by me.</div>
+            <div class="built">Built by me.</div>
 
-            <div>
-                  <img src="../img/logo.png" alt="logo">
+            <div class="img-bot">
+                  <img class="logo2" src="../img/logo.png" alt="logo">
             </div>
       </footer>
 

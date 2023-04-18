@@ -1,0 +1,162 @@
+html {
+      scroll-behavior: smooth;
+    }
+    
+
+html, body {
+      margin: 0;
+      padding: 0;
+}   
+
+body{
+      background-color: #040303;
+      color: white;
+      padding-top: 200px;
+      padding-left: 150px;
+      padding-right: 150px;
+      font-family: 'Anuphan', sans-serif;
+      font-weight: 300;
+}
+
+nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}    
+
+.logo {
+      height: 50px;
+      padding: 30px;
+      padding-left: 100px;
+      width: auto;
+}
+
+#my_name{
+      font-family: 'Anuphan', sans-serif;
+      font-weight: 700;
+      font-size: 70px;
+      margin-top: 0px;
+      margin-bottom: 30px;
+}    
+
+#hero {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px;
+}
+    
+#hero-left {
+      width: 50%;
+      text-align: justify;
+      line-height: 25px;
+}
+
+#hero-right {
+      width: 50%;
+}
+
+.photo {
+      border-radius: 5px 5px 5px 60px;
+      max-width: 60%;
+      margin-left: 200px;
+      height: auto;
+}
+
+h2{
+      margin-bottom: 30px;
+}
+
+h3{
+      color: #82CD47;
+}
+
+.scroll{
+      padding-bottom: 50px;
+      padding-left: 50px;
+}
+
+#scroll{
+      text-decoration: none;
+      color: white;
+}
+
+#skillset {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px;
+      padding-top: 150px;
+}
+
+#skill-left {
+      width: 40%;
+      line-height: 35px;
+}
+
+#skill-right {
+      width: 50%;
+      text-align: justify;
+      line-height: 25px;
+}
+
+#skills{
+      font-family: 'Anuphan', sans-serif;
+      font-weight: 700;
+      font-size: 30px;
+      margin-top: 0px;
+      margin-bottom: 30px;
+}
+
+#projects{
+     padding: 50px 50px 150px 50px;
+}
+
+#rationale{
+      padding: 70px 50px;
+}
+
+#rat-text{
+      text-align: justify;
+      line-height: 25px;
+}
+
+.built {
+      width: 40%;
+      line-height: 35px;
+      padding: 0px;
+}
+
+footer{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 150px;
+}
+
+.logo2 {
+      height: 50px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 300px;
+      width: auto;
+}
+
+#contact{
+      padding: 50px 150px;
+      text-align: center;
+      text-decoration: none;
+}
+
+#link{
+      text-decoration: none;
+}
+
+i{
+      text-decoration: none;
+      color: #82CD47;
+}
