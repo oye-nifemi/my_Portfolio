@@ -65,8 +65,20 @@ nav {
       border-radius: 5px 5px 5px 60px;
       max-width: 60%;
       margin-left: 120px;
-      height: auto;
-}
+      position: relative;
+    }
+    
+    .photo::before {
+      content: "";
+      position: absolute;
+      top: -10%;
+      left: -10%;
+      width: 120%;
+      height: 120%;
+      background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 60%);
+      z-index: -1;
+    }
+    
 
 h2{
       margin-bottom: 30px;
