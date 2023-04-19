@@ -9,11 +9,11 @@ html, body {
 }   
 
 body{
-      background-color: #040303;
+      background-color: #000000;
       color: white;
       padding-top: 200px;
-      padding-left: 150px;
-      padding-right: 150px;
+      /* padding-left: 150px;
+      padding-right: 150px; */
       font-family: 'Anuphan', sans-serif;
       font-weight: 300;
 }
@@ -26,26 +26,29 @@ nav {
 }    
 
 .logo {
-      height: 50px;
+      height: 80px;
       padding: 30px;
-      padding-left: 100px;
+      padding-left: 170px;
       width: auto;
 }
 
 #my_name{
       font-family: 'Anuphan', sans-serif;
-      font-weight: 700;
+      font-weight: 600;
       font-size: 70px;
       margin-top: 0px;
-      margin-bottom: 30px;
+      margin-bottom: 50px;
 }    
 
 #hero {
+      margin-left: 150px;
+      margin-right: 150px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      padding: 50px;
+      /* padding: 50px; */
+      padding-bottom: 20px;
 }
     
 #hero-left {
@@ -61,7 +64,7 @@ nav {
 .photo {
       border-radius: 5px 5px 5px 60px;
       max-width: 60%;
-      margin-left: 200px;
+      margin-left: 120px;
       height: auto;
 }
 
@@ -84,12 +87,14 @@ h3{
 }
 
 #skillset {
+      margin-left: 150px;
+      margin-right: 150px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      padding: 50px;
-      padding-top: 150px;
+      /* padding: 50px; */
+      padding-top: 100px;
 }
 
 #skill-left {
@@ -101,6 +106,7 @@ h3{
       width: 50%;
       text-align: justify;
       line-height: 25px;
+      padding: 0;
 }
 
 #skills{
@@ -112,22 +118,77 @@ h3{
 }
 
 #projects{
-     padding: 50px 50px 150px 50px;
+      margin-left: 150px;
+      margin-right: 150px;
+      padding: 50px 0 100px 0;
 }
 
-#rationale{
-      padding: 70px 50px;
+#rationale {
+      padding-left: 0;
+      padding-right: 0;
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 350px;
+      max-width: 1500px; /* or any other value you want */
+      margin: 0 auto; /* to center the element */
+    }
+    
+    .video-wrap {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 100%;
+      width: 100vw;
+      overflow: hidden;
+      z-index: -1;
+    }
+    
+    .videoembed {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+    
+    .vignette {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+      box-shadow: 
+            0 0 100px rgba(0,0,0,1) inset, /* top */
+            0 0 100px rgba(0,0,0,1) inset, /* bottom */
+            0 0 100px rgba(0,0,0,1) inset, /* left */
+            0 0 100px rgba(0,0,0,1) inset; /* right */
+      z-index: -1;
+    }
+    
+    
+.normal-text {
+      position: relative;
+      z-index: 1;
+      padding: 20px;
 }
 
 #rat-text{
+      padding-left: 200px;
+      padding-right: 200px;
       text-align: justify;
       line-height: 25px;
+      margin-top: 75px;
+      color: white;
 }
 
 .built {
-      width: 40%;
-      line-height: 35px;
-      padding: 0px;
+      color: #888888;
 }
 
 footer{
@@ -135,14 +196,16 @@ footer{
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      padding: 0 150px;
+      padding: 30px 150px;
 }
 
 .logo2 {
       height: 50px;
-      padding-top: 30px;
-      padding-bottom: 30px;
-      padding-left: 300px;
+      width: auto;
+}
+
+.logo22 {
+      height: 30px;
       width: auto;
 }
 
@@ -159,4 +222,34 @@ footer{
 i{
       text-decoration: none;
       color: #82CD47;
+}
+
+.normal-text{
+      color: #888888;
+      padding: 0;
+}
+
+#arrow{
+      margin-left: 100px;
+      height: 40px;
+      bottom: 20px;
+      right: 20px;
+      animation: bounce 2s infinite;
+      cursor: pointer;
+    }
+    
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+    
+
+#dot{
+      font-family: 'Manuale', serif;
+      color: #82CD47;
+      font-size: 130px;
+}
+
+#hello{
+      margin-bottom: 0;
 }

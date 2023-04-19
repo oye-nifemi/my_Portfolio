@@ -4,48 +4,59 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" href="../img/icon.png">
       <link rel="stylesheet" href="../css/style.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100;200;300;400;500;600;700&family=Manuale:wght@300&display=swap" rel="stylesheet">
       <script src="https://kit.fontawesome.com/82619a4bd3.js" crossorigin="anonymous"></script>
+
+
+
 
       <title>nifemi</title>
 </head>
 <body>
+      <script src="../javascript/script.js"></script>
+
       <nav>
             <img class="logo
             " src="../img/logo.png" alt="logo">
       </nav>
-      
+      <div id="scene"></div>
+
       <div id="hero">
             <div id="hero-left">
-                  <h2>Hello, I am</h2>
-                  <p id="my_name">Oluwanifemi</p>
+                  <h3 id="hello">Hello, I am</h3>
+                  <p id="my_name">Oluwanifemi<span id="dot">.</span></p>
 
-                  <div id="hero-text">
+                  <div class="normal-text" id="hero-text">
                         <p>I am a software developer and product manager who loves to work with design. I have a keen eye for the user experience, and it's my goal to make sure that products are as thoughtful and beautiful as they can be.</p>
                   </div>
             </div>
 
             <div id="hero-right">
-                  <img class="photo" src="../img/photo.png" alt="photo">
+                  <img class="photo" src="../img/photto.png" alt="photo">
             </div>
       </div>
 
       <div class="scroll">
             <a id="scroll" href="#skillset">
-                  <i class="far fa-arrow-alt-circle-down fa-3x"></i>
+                  <img id="arrow" src="../img/down-arrow.png" alt="arrow">
             </a>
       </div>
 
       <div id="skillset">
             <div id="skill-left">
-                  <h3>My Skillset</h3>
-                  <p id="skills">Software Development, Interface Design, & Product Management</p>
+                  <h3>About Me</h3>
+                  <h1>
+                        <p href="" class="typewrite" data-period="2000" data-type='[ "Software Developer.", "Interface Designer 🎨.", "Product Manager 🧠.", "I love aviation ✈️." ]'>
+                          <span class="wrap"></span>
+                        </p>
+                      </h1>
             </div>
 
-            <div id="skill-right">
+            <div class="normal-text" id="skill-right">
                   <p>
                         As someone with a strong interest in product management, I have been actively learning about the field through personal research and self-directed study. I enjoy exploring different aspects of the product development process, from idea conception to materialization.
 
@@ -59,24 +70,36 @@
             projects will come here
       </div>
 
-
       <div id="rationale">
-            <h3>Rationale</h3>
-
-            <div id="rat-text">
-                  <p>In today's fast-paced world, the intersection of technology, business, and human needs has become increasingly important. As a computer science undergraduate with a growing interest in product management, I have come to realize that the most successful products are those that prioritize the needs and desires of users while utilizing technology in innovative ways.
-
-                  By combining my knowledge of computer science and software development with my interest in product management, I am able to approach product design and development with a unique perspective. I believe that technology should be used to make people's lives easier and more enjoyable, and that effective product management can help bridge the gap between technology and human needs.</p>
+            <div class="video-wrap">
+              <video class="videoembed" autoplay muted loop>
+                <source src="../img/vid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="vignette"></div>
             </div>
-
-            
-      </div>
+            <div class="normal-text" id="rat-text">
+              <h3>Rationale</h3>
+              <p>In today's fast-paced world, the intersection of technology, business, and human needs has become increasingly important. As a computer science undergraduate with a growing interest in product management, I have come to realize that the most successful products are those that prioritize the needs and desires of users while utilizing technology in innovative ways.
+          
+              By combining my knowledge of computer science and software development with my interest in product management, I am able to approach product design and development with a unique perspective. I believe that technology should be used to make people's lives easier and more enjoyable, and that effective product management can help bridge the gap between technology and human needs.</p>
+            </div> 
+      </div>             
 
 
       <div id="contact">
-            <a id="link" href="mailto:nifoyewole@gmail.com"><h3>Get in touch</h3>
-                  <p><i class="far fa-envelope fa-2x"></i></p>
-            </a>
+            
+                  <div>
+                        <h3>Get in touch</h3>
+                        <a id="link" href="mailto:nifoyewole@gmail.com" target="_blank">
+                              <img class="logo22" src="../img/mail.png" alt="email">
+                        </a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.linkedin.com/in/oluwanifemi-oyewole/" target="_blank">
+                              <img class="logo22" src="../img/linkedin-logo.png" alt="linkedin">
+                        </a>
+                  </div>
+            
       </div>
 
       <footer>
